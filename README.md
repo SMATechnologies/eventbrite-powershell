@@ -1,19 +1,34 @@
-# Project Name
-Project description
+# Eventbrite API functions
+This script is a Powershell module file that contains functions for use with the Eventbrite API.  
+
+# Prerequisites
+* Powershell v5.1
+* <a href url="https://www.eventbrite.com/platform/api#/introduction/about-our-api">Eventbrite API v3</a>
+
+# Instructions
+Refer to the Eventbrite API <a href url="https://www.eventbrite.com/platform/api#/introduction/authentication">documentation</a> for instructions on how to obtain the necessary tokens for authenticating to the api.
+
+This file contains functions for assiting with building a script to manage Eventbrite API resources.  To use the functions you will need to import the module file into your script, see below for an example of how to do this.
+
+Example:
+```
+Import-Module "C:\EventbriteModule.psm1" -Force
+```
+
+Functions in the module:
+* <b>SMA_GetAttendees</b> - Returns attendees from an event
+* <b>SMA_GetEvents</b> - Returns the list of events
+* <b>SMA_GetOrganization</b> - Returns information about the organization (your business)
+* <b>SMA_GetOrganizers</b> - Returns a list of organizers (users associated with your Eventbrite organization)
+* <b>SMA_GetUserInfo</b> - Returns information about the user your are authenticating to the API as
 
 # Disclaimer
 No Support and No Warranty are provided by SMA Technologies for this project and related material. The use of this project's files is on your own risk.
 
 SMA Technologies assumes no liability for damage caused by the usage of any of the files offered here via this Github repository.
 
-# Prerequisites
-
-
-# Instructions
-
-
 # License
-Copyright 2019 SMA Technologies
+Copyright 2020 SMA Technologies
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
